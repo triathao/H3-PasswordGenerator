@@ -19,10 +19,20 @@
       <div class="card">
         <div class="card-header">
           <h2>Follow Prompts Below to Generate Random Password</h2>
-          <label for = "" >Number of Character</label>
-          <input type = "range" min= "1" max="128"        
-          <input type = "number" min= "1" max="128" 
+          <label for = "characterAmountRange" >Number of Character</label>
+          <div class="character-amount-container">
+          <input type = "range" min= "1" max="50" value= "25" id= "characterAmountRange">        
+          <input type = "number" min= "1" max="50" value= "25" id= "characterAmountRange"> 
+          <div>
+          <label for="">Include Uppercase</label>
+          <input type="checkbox" id="includesUppercase">
 
+          <label for="">Include Numbers</label>
+          <input type="checkbox" id="includesNumbers">
+
+          <label for="">Include Symbols</label>
+          <input type="checkbox" id="includesSymbols">
+        </div>
         </div>
 
         <div class="card-body">
