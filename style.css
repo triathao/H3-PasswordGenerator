@@ -1,82 +1,51 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: rgb(0, 0, 0);
-  margin: 0;
-  color: white;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, red , rgb(239, 189, 6));
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
 
 .container {
-  background-color: rgb(65, 65, 66);
-  padding: 3rem;
-  border-radius: 3px;
-  border: 2px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  
+  margin: 40px;
+  width: 400px;
+  height: 600px;
+  padding: 10px 25px;
+  background: #0a0e31;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35), 0 8px 12px rgba(0, 0, 0, 0.15);
+ font-family: 'Times New Roman', Times, serif;
 }
 
-.form {
-  display: grid;
-  grid-template-columns: auto auto;
-  row-gap: 1rem;
-  column-gap: 3rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  margin: 0;
-  text-align: center;
-
-
-}
-
-label {
-  font-weight: bold;
-}
-
-.character-amount-container {
-  display: flex;
-  align-items: center;
-}
-
-.number-input {
-  width: 2rem;
-
-}
-
-.password-display {
-  background-color: white;
-  color: black;
-  padding: 1rem;
-  border: 1px solid black;
-  height: 2rem;
-  width: 350px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  word-break: break-all;
-}
-
-.btn {
-  grid-column: span 2;
-  background-color: coral;
-  border: 2px solid white;
-  border-radius: 20px;
+h2.title {
+  font-size: 1.75rem;
+  margin: 10px -5px;
+  margin-bottom: 30px;
   color: white;
-  padding: .5rem 1rem;
-  font-weight: bold;
-  cursor: pointer;
 }
 
-.btn:hover {
-  background-color: black;
+.result {
+  position: relative;
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+}
+
+.field-title {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5;
+  text-transform: uppercase;
+  font-size: .65rem;
+  pointer-events: none;
+  user-select: none;
 }
